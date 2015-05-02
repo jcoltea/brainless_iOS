@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD7AFED91AF59330003F7B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFED81AF59330003F7B28 /* AppDelegate.swift */; };
+		CD7AFEDB1AF59330003F7B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEDA1AF59330003F7B28 /* ViewController.swift */; };
+		CD7AFEDE1AF59330003F7B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7AFEDC1AF59330003F7B28 /* Main.storyboard */; };
+		CD7AFEE01AF59330003F7B28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7AFEDF1AF59330003F7B28 /* Images.xcassets */; };
+		CD7AFEE31AF59330003F7B28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD7AFEE11AF59330003F7B28 /* LaunchScreen.xib */; };
+		CD7AFEEF1AF59330003F7B28 /* BrainlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEEE1AF59330003F7B28 /* BrainlessTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD7AFEE91AF59330003F7B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD7AFECB1AF59330003F7B28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD7AFED21AF59330003F7B28;
+			remoteInfo = Brainless;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD7AFED31AF59330003F7B28 /* Brainless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7AFED71AF59330003F7B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7AFED81AF59330003F7B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD7AFEDA1AF59330003F7B28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD7AFEDD1AF59330003F7B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD7AFEDF1AF59330003F7B28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD7AFEE21AF59330003F7B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CD7AFEE81AF59330003F7B28 /* BrainlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7AFEED1AF59330003F7B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7AFEEE1AF59330003F7B28 /* BrainlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainlessTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD7AFED01AF59330003F7B28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7AFEE51AF59330003F7B28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD7AFECA1AF59330003F7B28 = {
+			isa = PBXGroup;
+			children = (
+				CD7AFED51AF59330003F7B28 /* Brainless */,
+				CD7AFEEB1AF59330003F7B28 /* BrainlessTests */,
+				CD7AFED41AF59330003F7B28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD7AFED41AF59330003F7B28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD7AFED31AF59330003F7B28 /* Brainless.app */,
+				CD7AFEE81AF59330003F7B28 /* BrainlessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD7AFED51AF59330003F7B28 /* Brainless */ = {
+			isa = PBXGroup;
+			children = (
+				CD7AFED81AF59330003F7B28 /* AppDelegate.swift */,
+				CD7AFEDA1AF59330003F7B28 /* ViewController.swift */,
+				CD7AFEDC1AF59330003F7B28 /* Main.storyboard */,
+				CD7AFEDF1AF59330003F7B28 /* Images.xcassets */,
+				CD7AFEE11AF59330003F7B28 /* LaunchScreen.xib */,
+				CD7AFED61AF59330003F7B28 /* Supporting Files */,
+			);
+			path = Brainless;
+			sourceTree = "<group>";
+		};
+		CD7AFED61AF59330003F7B28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD7AFED71AF59330003F7B28 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD7AFEEB1AF59330003F7B28 /* BrainlessTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD7AFEEE1AF59330003F7B28 /* BrainlessTests.swift */,
+				CD7AFEEC1AF59330003F7B28 /* Supporting Files */,
+			);
+			path = BrainlessTests;
+			sourceTree = "<group>";
+		};
+		CD7AFEEC1AF59330003F7B28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD7AFEED1AF59330003F7B28 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD7AFED21AF59330003F7B28 /* Brainless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD7AFEF21AF59330003F7B28 /* Build configuration list for PBXNativeTarget "Brainless" */;
+			buildPhases = (
+				CD7AFECF1AF59330003F7B28 /* Sources */,
+				CD7AFED01AF59330003F7B28 /* Frameworks */,
+				CD7AFED11AF59330003F7B28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brainless;
+			productName = Brainless;
+			productReference = CD7AFED31AF59330003F7B28 /* Brainless.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD7AFEE71AF59330003F7B28 /* BrainlessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD7AFEF51AF59330003F7B28 /* Build configuration list for PBXNativeTarget "BrainlessTests" */;
+			buildPhases = (
+				CD7AFEE41AF59330003F7B28 /* Sources */,
+				CD7AFEE51AF59330003F7B28 /* Frameworks */,
+				CD7AFEE61AF59330003F7B28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD7AFEEA1AF59330003F7B28 /* PBXTargetDependency */,
+			);
+			name = BrainlessTests;
+			productName = BrainlessTests;
+			productReference = CD7AFEE81AF59330003F7B28 /* BrainlessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD7AFECB1AF59330003F7B28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = JulianColtea;
+				TargetAttributes = {
+					CD7AFED21AF59330003F7B28 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					CD7AFEE71AF59330003F7B28 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = CD7AFED21AF59330003F7B28;
+					};
+				};
+			};
+			buildConfigurationList = CD7AFECE1AF59330003F7B28 /* Build configuration list for PBXProject "Brainless" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD7AFECA1AF59330003F7B28;
+			productRefGroup = CD7AFED41AF59330003F7B28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD7AFED21AF59330003F7B28 /* Brainless */,
+				CD7AFEE71AF59330003F7B28 /* BrainlessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD7AFED11AF59330003F7B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7AFEDE1AF59330003F7B28 /* Main.storyboard in Resources */,
+				CD7AFEE31AF59330003F7B28 /* LaunchScreen.xib in Resources */,
+				CD7AFEE01AF59330003F7B28 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7AFEE61AF59330003F7B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD7AFECF1AF59330003F7B28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7AFEDB1AF59330003F7B28 /* ViewController.swift in Sources */,
+				CD7AFED91AF59330003F7B28 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7AFEE41AF59330003F7B28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7AFEEF1AF59330003F7B28 /* BrainlessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD7AFEEA1AF59330003F7B28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD7AFED21AF59330003F7B28 /* Brainless */;
+			targetProxy = CD7AFEE91AF59330003F7B28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD7AFEDC1AF59330003F7B28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD7AFEDD1AF59330003F7B28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD7AFEE11AF59330003F7B28 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD7AFEE21AF59330003F7B28 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD7AFEF01AF59330003F7B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD7AFEF11AF59330003F7B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD7AFEF31AF59330003F7B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Brainless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD7AFEF41AF59330003F7B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Brainless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD7AFEF61AF59330003F7B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrainlessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brainless.app/Brainless";
+			};
+			name = Debug;
+		};
+		CD7AFEF71AF59330003F7B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrainlessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brainless.app/Brainless";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD7AFECE1AF59330003F7B28 /* Build configuration list for PBXProject "Brainless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7AFEF01AF59330003F7B28 /* Debug */,
+				CD7AFEF11AF59330003F7B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD7AFEF21AF59330003F7B28 /* Build configuration list for PBXNativeTarget "Brainless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7AFEF31AF59330003F7B28 /* Debug */,
+				CD7AFEF41AF59330003F7B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD7AFEF51AF59330003F7B28 /* Build configuration list for PBXNativeTarget "BrainlessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7AFEF61AF59330003F7B28 /* Debug */,
+				CD7AFEF71AF59330003F7B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD7AFECB1AF59330003F7B28 /* Project object */;
+}
