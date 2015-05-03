@@ -13,6 +13,8 @@
 		CD7AFEE01AF59330003F7B28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7AFEDF1AF59330003F7B28 /* Images.xcassets */; };
 		CD7AFEE31AF59330003F7B28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD7AFEE11AF59330003F7B28 /* LaunchScreen.xib */; };
 		CD7AFEEF1AF59330003F7B28 /* BrainlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEEE1AF59330003F7B28 /* BrainlessTests.swift */; };
+		CD7AFEF91AF5A644003F7B28 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEF81AF5A644003F7B28 /* RegisterPageViewController.swift */; };
+		CD7AFEFB1AF5B59F003F7B28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEFA1AF5B59F003F7B28 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		CD7AFEE81AF59330003F7B28 /* BrainlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7AFEED1AF59330003F7B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD7AFEEE1AF59330003F7B28 /* BrainlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainlessTests.swift; sourceTree = "<group>"; };
+		CD7AFEF81AF5A644003F7B28 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		CD7AFEFA1AF5B59F003F7B28 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				CD7AFEDF1AF59330003F7B28 /* Images.xcassets */,
 				CD7AFEE11AF59330003F7B28 /* LaunchScreen.xib */,
 				CD7AFED61AF59330003F7B28 /* Supporting Files */,
+				CD7AFEF81AF5A644003F7B28 /* RegisterPageViewController.swift */,
+				CD7AFEFA1AF5B59F003F7B28 /* LoginViewController.swift */,
 			);
 			path = Brainless;
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7AFEFB1AF5B59F003F7B28 /* LoginViewController.swift in Sources */,
 				CD7AFEDB1AF59330003F7B28 /* ViewController.swift in Sources */,
 				CD7AFED91AF59330003F7B28 /* AppDelegate.swift in Sources */,
+				CD7AFEF91AF5A644003F7B28 /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,7 @@
 				CD7AFEF41AF59330003F7B28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD7AFEF51AF59330003F7B28 /* Build configuration list for PBXNativeTarget "BrainlessTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				CD7AFEF71AF59330003F7B28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
