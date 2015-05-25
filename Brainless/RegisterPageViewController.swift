@@ -79,6 +79,10 @@ class RegisterPageViewController: UIViewController {
         task.resume();
     }
 
+    @IBAction func cancelButtonTapped(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil);
+    }
+    
     func displayAsyncAlertMessageDismissViewController(aMessage: String)
     {
         dispatch_async(dispatch_get_main_queue(), {
