@@ -49,6 +49,7 @@ class LoginViewController: UIViewController {
             if (statusCode.statusCode == 200)
             {
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
+                NSUserDefaults.standardUserDefaults().setObject(myUserEmail, forKey: "userName");
                 self.dismissViewControllerAnimated(true, completion: nil);
             }
             else if (statusCode.statusCode == 401)

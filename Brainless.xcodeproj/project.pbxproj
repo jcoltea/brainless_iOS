@@ -15,6 +15,9 @@
 		CD7AFEEF1AF59330003F7B28 /* BrainlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEEE1AF59330003F7B28 /* BrainlessTests.swift */; };
 		CD7AFEF91AF5A644003F7B28 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEF81AF5A644003F7B28 /* RegisterPageViewController.swift */; };
 		CD7AFEFB1AF5B59F003F7B28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEFA1AF5B59F003F7B28 /* LoginViewController.swift */; };
+		CDDD8FC11B13741500C8F12D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD8FC01B13741500C8F12D /* SWRevealViewController.m */; };
+		CDDD8FC31B137A5700C8F12D /* BackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDD8FC21B137A5700C8F12D /* BackTableViewController.swift */; };
+		CDDD8FC51B13823A00C8F12D /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDD8FC41B13823A00C8F12D /* TasksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		CD7AFEEE1AF59330003F7B28 /* BrainlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainlessTests.swift; sourceTree = "<group>"; };
 		CD7AFEF81AF5A644003F7B28 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		CD7AFEFA1AF5B59F003F7B28 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CDDD8FBE1B13741500C8F12D /* Brainless-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brainless-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDDD8FBF1B13741500C8F12D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		CDDD8FC01B13741500C8F12D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		CDDD8FC21B137A5700C8F12D /* BackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableViewController.swift; sourceTree = "<group>"; };
+		CDDD8FC41B13823A00C8F12D /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,8 @@
 				CD7AFED61AF59330003F7B28 /* Supporting Files */,
 				CD7AFEF81AF5A644003F7B28 /* RegisterPageViewController.swift */,
 				CD7AFEFA1AF5B59F003F7B28 /* LoginViewController.swift */,
+				CDDD8FC21B137A5700C8F12D /* BackTableViewController.swift */,
+				CDDD8FC41B13823A00C8F12D /* TasksViewController.swift */,
 			);
 			path = Brainless;
 			sourceTree = "<group>";
@@ -96,7 +106,10 @@
 		CD7AFED61AF59330003F7B28 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDDD8FBF1B13741500C8F12D /* SWRevealViewController.h */,
+				CDDD8FC01B13741500C8F12D /* SWRevealViewController.m */,
 				CD7AFED71AF59330003F7B28 /* Info.plist */,
+				CDDD8FBE1B13741500C8F12D /* Brainless-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,7 +233,10 @@
 			files = (
 				CD7AFEFB1AF5B59F003F7B28 /* LoginViewController.swift in Sources */,
 				CD7AFEDB1AF59330003F7B28 /* ViewController.swift in Sources */,
+				CDDD8FC11B13741500C8F12D /* SWRevealViewController.m in Sources */,
+				CDDD8FC51B13823A00C8F12D /* TasksViewController.swift in Sources */,
 				CD7AFED91AF59330003F7B28 /* AppDelegate.swift in Sources */,
+				CDDD8FC31B137A5700C8F12D /* BackTableViewController.swift in Sources */,
 				CD7AFEF91AF5A644003F7B28 /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,9 +364,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Brainless/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brainless/Brainless-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -358,9 +377,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Brainless/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brainless/Brainless-Bridging-Header.h";
 			};
 			name = Release;
 		};

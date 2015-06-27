@@ -1,0 +1,529 @@
+Index: Brainless.xcodeproj/project.pbxproj
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Brainless.xcodeproj/project.pbxproj	(date 1430645325000)
++++ Brainless.xcodeproj/project.pbxproj	(revision )
+@@ -15,6 +15,13 @@
+ 		CD7AFEEF1AF59330003F7B28 /* BrainlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEEE1AF59330003F7B28 /* BrainlessTests.swift */; };
+ 		CD7AFEF91AF5A644003F7B28 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEF81AF5A644003F7B28 /* RegisterPageViewController.swift */; };
+ 		CD7AFEFB1AF5B59F003F7B28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEFA1AF5B59F003F7B28 /* LoginViewController.swift */; };
++		CD7AFEFD1AF622B1003F7B28 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEFC1AF622B1003F7B28 /* ContainerViewController.swift */; };
++		CD7AFF041AF622DD003F7B28 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFEFE1AF622DD003F7B28 /* AViewController.swift */; };
++		CD7AFF051AF622DD003F7B28 /* AViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD7AFEFF1AF622DD003F7B28 /* AViewController.xib */; };
++		CD7AFF061AF622DD003F7B28 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFF001AF622DD003F7B28 /* BViewController.swift */; };
++		CD7AFF071AF622DD003F7B28 /* BViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD7AFF011AF622DD003F7B28 /* BViewController.xib */; };
++		CD7AFF081AF622DD003F7B28 /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7AFF021AF622DD003F7B28 /* CViewController.swift */; };
++		CD7AFF091AF622DD003F7B28 /* CViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD7AFF031AF622DD003F7B28 /* CViewController.xib */; };
+ /* End PBXBuildFile section */
+ 
+ /* Begin PBXContainerItemProxy section */
+@@ -40,6 +47,13 @@
+ 		CD7AFEEE1AF59330003F7B28 /* BrainlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainlessTests.swift; sourceTree = "<group>"; };
+ 		CD7AFEF81AF5A644003F7B28 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+ 		CD7AFEFA1AF5B59F003F7B28 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
++		CD7AFEFC1AF622B1003F7B28 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
++		CD7AFEFE1AF622DD003F7B28 /* AViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
++		CD7AFEFF1AF622DD003F7B28 /* AViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AViewController.xib; sourceTree = "<group>"; };
++		CD7AFF001AF622DD003F7B28 /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
++		CD7AFF011AF622DD003F7B28 /* BViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BViewController.xib; sourceTree = "<group>"; };
++		CD7AFF021AF622DD003F7B28 /* CViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
++		CD7AFF031AF622DD003F7B28 /* CViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CViewController.xib; sourceTree = "<group>"; };
+ /* End PBXFileReference section */
+ 
+ /* Begin PBXFrameworksBuildPhase section */
+@@ -81,6 +95,7 @@
+ 		CD7AFED51AF59330003F7B28 /* Brainless */ = {
+ 			isa = PBXGroup;
+ 			children = (
++				CD7AFF0A1AF622E7003F7B28 /* SubViewControllers */,
+ 				CD7AFED81AF59330003F7B28 /* AppDelegate.swift */,
+ 				CD7AFEDA1AF59330003F7B28 /* ViewController.swift */,
+ 				CD7AFEDC1AF59330003F7B28 /* Main.storyboard */,
+@@ -89,6 +104,7 @@
+ 				CD7AFED61AF59330003F7B28 /* Supporting Files */,
+ 				CD7AFEF81AF5A644003F7B28 /* RegisterPageViewController.swift */,
+ 				CD7AFEFA1AF5B59F003F7B28 /* LoginViewController.swift */,
++				CD7AFEFC1AF622B1003F7B28 /* ContainerViewController.swift */,
+ 			);
+ 			path = Brainless;
+ 			sourceTree = "<group>";
+@@ -118,6 +134,19 @@
+ 			name = "Supporting Files";
+ 			sourceTree = "<group>";
+ 		};
++		CD7AFF0A1AF622E7003F7B28 /* SubViewControllers */ = {
++			isa = PBXGroup;
++			children = (
++				CD7AFEFE1AF622DD003F7B28 /* AViewController.swift */,
++				CD7AFEFF1AF622DD003F7B28 /* AViewController.xib */,
++				CD7AFF001AF622DD003F7B28 /* BViewController.swift */,
++				CD7AFF011AF622DD003F7B28 /* BViewController.xib */,
++				CD7AFF021AF622DD003F7B28 /* CViewController.swift */,
++				CD7AFF031AF622DD003F7B28 /* CViewController.xib */,
++			);
++			name = SubViewControllers;
++			sourceTree = "<group>";
++		};
+ /* End PBXGroup section */
+ 
+ /* Begin PBXNativeTarget section */
+@@ -198,6 +227,9 @@
+ 			isa = PBXResourcesBuildPhase;
+ 			buildActionMask = 2147483647;
+ 			files = (
++				CD7AFF091AF622DD003F7B28 /* CViewController.xib in Resources */,
++				CD7AFF071AF622DD003F7B28 /* BViewController.xib in Resources */,
++				CD7AFF051AF622DD003F7B28 /* AViewController.xib in Resources */,
+ 				CD7AFEDE1AF59330003F7B28 /* Main.storyboard in Resources */,
+ 				CD7AFEE31AF59330003F7B28 /* LaunchScreen.xib in Resources */,
+ 				CD7AFEE01AF59330003F7B28 /* Images.xcassets in Resources */,
+@@ -218,9 +250,13 @@
+ 			isa = PBXSourcesBuildPhase;
+ 			buildActionMask = 2147483647;
+ 			files = (
++				CD7AFF061AF622DD003F7B28 /* BViewController.swift in Sources */,
+ 				CD7AFEFB1AF5B59F003F7B28 /* LoginViewController.swift in Sources */,
++				CD7AFF081AF622DD003F7B28 /* CViewController.swift in Sources */,
+ 				CD7AFEDB1AF59330003F7B28 /* ViewController.swift in Sources */,
++				CD7AFEFD1AF622B1003F7B28 /* ContainerViewController.swift in Sources */,
+ 				CD7AFED91AF59330003F7B28 /* AppDelegate.swift in Sources */,
++				CD7AFF041AF622DD003F7B28 /* AViewController.swift in Sources */,
+ 				CD7AFEF91AF5A644003F7B28 /* RegisterPageViewController.swift in Sources */,
+ 			);
+ 			runOnlyForDeploymentPostprocessing = 0;
+Index: Brainless/BViewController.xib
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Brainless/BViewController.xib	(revision )
++++ Brainless/BViewController.xib	(revision )
+@@ -0,0 +1,33 @@
++<?xml version="1.0" encoding="UTF-8" standalone="no"?>
++<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
++    <dependencies>
++        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
++    </dependencies>
++    <objects>
++        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BViewController">
++            <connections>
++                <outlet property="view" destination="1" id="3"/>
++            </connections>
++        </placeholder>
++        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
++        <view contentMode="scaleToFill" id="1">
++            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
++            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
++            <subviews>
++                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFA-40-LsW">
++                    <rect key="frame" x="154" y="251" width="12" height="21"/>
++                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
++                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
++                    <nil key="highlightedColor"/>
++                </label>
++            </subviews>
++            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
++            <point key="canvasLocation" x="268" y="146"/>
++        </view>
++    </objects>
++    <simulatedMetricsContainer key="defaultSimulatedMetrics">
++        <simulatedStatusBarMetrics key="statusBar"/>
++        <simulatedOrientationMetrics key="orientation"/>
++        <simulatedScreenMetrics key="destination" type="retina4"/>
++    </simulatedMetricsContainer>
++</document>
+Index: Brainless/CViewController.swift
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Brainless/CViewController.swift	(revision )
++++ Brainless/CViewController.swift	(revision )
+@@ -0,0 +1,25 @@
++//
++//  CViewController.swift
++//  bubble_ios
++//
++//  Created by Brendan Lee on 7/23/14.
++//  Copyright (c) 2014 Brendan Lee. All rights reserved.
++//
++
++import UIKit
++
++class CViewController: UIViewController {
++                            
++    override func viewDidLoad() {
++        super.viewDidLoad()
++        // Do any additional setup after loading the view, typically from a nib.
++    }
++
++    override func didReceiveMemoryWarning() {
++        super.didReceiveMemoryWarning()
++        // Dispose of any resources that can be recreated.
++    }
++
++    
++}
++
+Index: Brainless/ContainerViewController.swift
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Brainless/ContainerViewController.swift	(revision )
++++ Brainless/ContainerViewController.swift	(revision )
+@@ -0,0 +1,62 @@
++//
++//  ContainerViewController.swift
++//  Brainless
++//
++//  Created by Julian Coltea on 5/3/15.
++//  Copyright (c) 2015 JulianColtea. All rights reserved.
++//
++
++import UIKit
++
++class ContainerViewController: UIViewController {
++
++    // Outlet used in storyboard
++    @IBOutlet var scrollView: UIScrollView?;
++    
++    override func viewDidLoad() {
++        super.viewDidLoad();
++        
++        // 1) Create the three views used in the swipe container view
++        var AVc :AViewController =  AViewController(nibName: "AViewController", bundle: nil);
++        var BVc :BViewController =  BViewController(nibName: "BViewController", bundle: nil);
++        var CVc :CViewController =  CViewController(nibName: "CViewController", bundle: nil);
++        
++        
++        // 2) Add in each view to the container view hierarchy
++        //    Add them in opposite order since the view hieracrhy is a stack
++        self.addChildViewController(CVc);
++        self.scrollView!.addSubview(CVc.view);
++        CVc.didMoveToParentViewController(self);
++        
++        self.addChildViewController(BVc);
++        self.scrollView!.addSubview(BVc.view);
++        BVc.didMoveToParentViewController(self);
++        
++        self.addChildViewController(AVc);
++        self.scrollView!.addSubview(AVc.view);
++        AVc.didMoveToParentViewController(self);
++        
++        
++        // 3) Set up the frames of the view controllers to align
++        //    with eachother inside the container view
++        var adminFrame :CGRect = AVc.view.frame;
++        adminFrame.origin.x = adminFrame.width;
++        BVc.view.frame = adminFrame;
++        
++        var BFrame :CGRect = BVc.view.frame;
++        BFrame.origin.x = 2*BFrame.width;
++        CVc.view.frame = BFrame;
++        
++        
++        // 4) Finally set the size of the scroll view that contains the frames
++        var scrollWidth: CGFloat  = 3 * self.view.frame.width
++        var scrollHeight: CGFloat  = self.view.frame.size.height
++        self.scrollView!.contentSize = CGSizeMake(scrollWidth, scrollHeight);
++    }
++    
++    override func didReceiveMemoryWarning() {
++        super.didReceiveMemoryWarning()
++        // Dispose of any resources that can be recreated.
++    }
++
++}
+Index: Brainless/AViewController.xib
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Brainless/AViewController.xib	(revision )
++++ Brainless/AViewController.xib	(revision )
+@@ -0,0 +1,38 @@
++<?xml version="1.0" encoding="UTF-8" standalone="no"?>
++<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
++    <dependencies>
++        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
++    </dependencies>
++    <objects>
++        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AViewController">
++            <connections>
++                <outlet property="view" destination="W0s-FM-IsD" id="tFI-el-tQn"/>
++            </connections>
++        </placeholder>
++        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
++        <view contentMode="scaleToFill" id="W0s-FM-IsD">
++            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
++            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++            <subviews>
++                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFy-mb-Goz">
++                    <rect key="frame" x="161" y="285" width="78" height="30"/>
++                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
++                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
++                    <state key="normal" title="Logout">
++                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
++                    </state>
++                    <connections>
++                        <action selector="logoutButtonTapped:" destination="-1" eventType="touchUpInside" id="8h8-P3-Mny"/>
++                    </connections>
++                </button>
++            </subviews>
++            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
++            <point key="canvasLocation" x="431" y="598"/>
++        </view>
++    </objects>
++    <simulatedMetricsContainer key="defaultSimulatedMetrics">
++        <simulatedStatusBarMetrics key="statusBar"/>
++        <simulatedOrientationMetrics key="orientation"/>
++        <simulatedScreenMetrics key="destination" type="retina4"/>
++    </simulatedMetricsContainer>
++</document>
+Index: Brainless/ViewController.swift
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Brainless/ViewController.swift	(date 1430645325000)
++++ Brainless/ViewController.swift	(revision )
+@@ -10,14 +10,53 @@
+ 
+ class ViewController: UIViewController {
+ 
+-    override func viewDidLoad() {
+-        super.viewDidLoad()
+-        // Do any additional setup after loading the view, typically from a nib.
+-    }
++    // Outlet used in storyboard
++    @IBOutlet var scrollView: UIScrollView?;
+ 
+     override func didReceiveMemoryWarning() {
+         super.didReceiveMemoryWarning()
+         // Dispose of any resources that can be recreated.
++    }
++    
++    override func viewDidLoad() {
++        super.viewDidLoad();
++        
++        // 1) Create the three views used in the swipe container view
++        var AVc :AViewController =  AViewController(nibName: "AViewController", bundle: nil);
++        var BVc :BViewController =  BViewController(nibName: "BViewController", bundle: nil);
++        var CVc :CViewController =  CViewController(nibName: "CViewController", bundle: nil);
++        
++        
++        // 2) Add in each view to the container view hierarchy
++        //    Add them in opposite order since the view hieracrhy is a stack
++        self.addChildViewController(CVc);
++        self.scrollView!.addSubview(CVc.view);
++        CVc.didMoveToParentViewController(self);
++        
++        self.addChildViewController(BVc);
++        self.scrollView!.addSubview(BVc.view);
++        BVc.didMoveToParentViewController(self);
++        
++        self.addChildViewController(AVc);
++        self.scrollView!.addSubview(AVc.view);
++        AVc.didMoveToParentViewController(self);
++        
++        
++        // 3) Set up the frames of the view controllers to align
++        //    with eachother inside the container view
++        var adminFrame :CGRect = AVc.view.frame;
++        adminFrame.origin.x = adminFrame.width;
++        BVc.view.frame = adminFrame;
++        
++        var BFrame :CGRect = BVc.view.frame;
++        BFrame.origin.x = 2*BFrame.width;
++        CVc.view.frame = BFrame;
++        
++        
++        // 4) Finally set the size of the scroll view that contains the frames
++        var scrollWidth: CGFloat  = 3 * self.view.frame.width
++        var scrollHeight: CGFloat  = self.view.frame.size.height
++        self.scrollView!.contentSize = CGSizeMake(scrollWidth, scrollHeight);
+     }
+     
+     override func viewDidAppear(animated: Bool) {
+Index: Brainless/CViewController.xib
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Brainless/CViewController.xib	(revision )
++++ Brainless/CViewController.xib	(revision )
+@@ -0,0 +1,33 @@
++<?xml version="1.0" encoding="UTF-8" standalone="no"?>
++<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
++    <dependencies>
++        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
++    </dependencies>
++    <objects>
++        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CViewController">
++            <connections>
++                <outlet property="view" destination="1" id="3"/>
++            </connections>
++        </placeholder>
++        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
++        <view contentMode="scaleToFill" id="1">
++            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
++            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
++            <subviews>
++                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFA-40-LsW">
++                    <rect key="frame" x="154" y="251" width="13" height="21"/>
++                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
++                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
++                    <nil key="highlightedColor"/>
++                </label>
++            </subviews>
++            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
++            <point key="canvasLocation" x="447" y="366"/>
++        </view>
++    </objects>
++    <simulatedMetricsContainer key="defaultSimulatedMetrics">
++        <simulatedStatusBarMetrics key="statusBar"/>
++        <simulatedOrientationMetrics key="orientation"/>
++        <simulatedScreenMetrics key="destination" type="retina4"/>
++    </simulatedMetricsContainer>
++</document>
+Index: Brainless/AViewController.swift
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Brainless/AViewController.swift	(revision )
++++ Brainless/AViewController.swift	(revision )
+@@ -0,0 +1,29 @@
++//
++//  AViewController.swift
++//  bubble_ios
++//
++//  Created by Brendan Lee on 7/23/14.
++//  Copyright (c) 2014 Brendan Lee. All rights reserved.
++//
++
++import UIKit
++
++class AViewController: UIViewController {
++    
++    override func viewDidLoad() {
++        super.viewDidLoad()
++        // Do any additional setup after loading the view, typically from a nib.
++    }
++    
++    override func didReceiveMemoryWarning() {
++        super.didReceiveMemoryWarning()
++        // Dispose of any resources that can be recreated.
++    }
++    
++    @IBAction func logoutButtonTapped(sender: AnyObject) {
++        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isUserLoggedIn");
++        NSUserDefaults.standardUserDefaults().synchronize();
++        
++        self.parentViewController!.performSegueWithIdentifier("loginView", sender: self);
++    }
++}
+\ No newline at end of file
+Index: Brainless/BViewController.swift
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Brainless/BViewController.swift	(revision )
++++ Brainless/BViewController.swift	(revision )
+@@ -0,0 +1,25 @@
++//
++//  BViewController.swift
++//  bubble_ios
++//
++//  Created by Brendan Lee on 7/23/14.
++//  Copyright (c) 2014 Brendan Lee. All rights reserved.
++//
++
++import UIKit
++
++class BViewController: UIViewController {
++    
++    override func viewDidLoad() {
++        super.viewDidLoad()
++        // Do any additional setup after loading the view, typically from a nib.
++    }
++
++    override func didReceiveMemoryWarning() {
++        super.didReceiveMemoryWarning()
++        // Dispose of any resources that can be recreated.
++    }
++
++
++}
++
+Index: Brainless/Base.lproj/Main.storyboard
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Brainless/Base.lproj/Main.storyboard	(date 1430645325000)
++++ Brainless/Base.lproj/Main.storyboard	(revision )
+@@ -16,53 +16,25 @@
+                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                         <subviews>
+-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protected" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RR-y8-YsJ">
+-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+-                                <nil key="highlightedColor"/>
++                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uWx-wu-Tow">
++                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                 <variation key="widthClass=compact" fixedFrame="YES">
+-                                    <rect key="frame" x="163" y="116" width="75" height="21"/>
++                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                 </variation>
+-                            </label>
+-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bng-5M-RaF">
+-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+-                                <state key="normal" title="Logout">
+-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+-                                </state>
+-                                <variation key="widthClass=compact" fixedFrame="YES">
+-                                    <rect key="frame" x="159" y="173" width="82" height="30"/>
+-                                </variation>
+-                                <connections>
+-                                    <action selector="logoutButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6Hz-v7-GRE"/>
+-                                </connections>
+-                            </button>
++                            </scrollView>
+                         </subviews>
+                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+-                        <variation key="default">
+-                            <mask key="subviews">
+-                                <exclude reference="0RR-y8-YsJ"/>
+-                                <exclude reference="Bng-5M-RaF"/>
+-                            </mask>
+-                        </variation>
+-                        <variation key="widthClass=compact">
+-                            <mask key="subviews">
+-                                <include reference="0RR-y8-YsJ"/>
+-                                <include reference="Bng-5M-RaF"/>
+-                            </mask>
+-                        </variation>
+                     </view>
+                     <navigationItem key="navigationItem" id="lHh-tS-Mv8"/>
+                     <nil key="simulatedTopBarMetrics"/>
+                     <connections>
++                        <outlet property="scrollView" destination="uWx-wu-Tow" id="g6D-Ow-TJF"/>
+                         <segue destination="5G8-j0-9Uv" kind="presentation" identifier="loginView" animates="NO" id="kkP-WE-6Uy"/>
+                     </connections>
+                 </viewController>
+                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+             </objects>
+-            <point key="canvasLocation" x="1506" y="661"/>
++            <point key="canvasLocation" x="1539" y="661"/>
+         </scene>
+         <!--Login View Controller-->
+         <scene sceneID="BRZ-wa-xeb">
